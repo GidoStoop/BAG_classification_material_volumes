@@ -85,9 +85,9 @@ SELECT id_pand, SUM(vp.floor_area / cpp.n_pand) AS tot_floor_area FROM ...
 
 **Why?** To accurately assess whether a building is a high-rise, it's crucial to understand its actual floor area. Sometimes addresses are based on the front-door's location, not the dwelling's physical location, skewing floor area ratios and consequently material volume calculations. Thus, it's vital to associate BAG polygons with the same building and adjust floor area distribution.
 
-**BAG buildings**
+**BAG buildings**<br/>
 ![image](https://github.com/GidoStoop/BAG_classification_material_volumes/blob/main/images/Melissakade-Utrecht_BAG.png)
-**Cadastral parcel**
+<br/>**Cadastral parcel**<br/>
 ![image](https://github.com/GidoStoop/BAG_classification_material_volumes/blob/main/images/Melissakade-Utrecht_Kadaster.png)</br>
 
 ```sql
@@ -119,9 +119,9 @@ SELECT *,
 
 **Note!** Some buildings are very hard to classify, for instance when the BAG-pand and the cadastral parcels are both awkwardly defined:
 
-**BAG**
+**BAG**<br/>
 ![image](https://github.com/GidoStoop/BAG_classification_material_volumes/blob/main/images/Scharleistraat-Utrecht_BAG.png)
-**Kadaster**
+<br/>**Cadastral parcels**<br/>
 ![image](https://github.com/GidoStoop/BAG_classification_material_volumes/blob/main/images/Scharleistraat-Utrecht_Kadaster.png)
 
 ### Step 4: Material Volume Estimation
